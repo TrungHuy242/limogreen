@@ -38,37 +38,50 @@ export const RouteSection = () => {
           {/* Cột 2: Lộ trình chính */}
           <div className="flex flex-col items-center pt-8 md:pt-0">
             <div className="bg-accent text-white font-bold px-6 py-2 rounded-full mb-8 inline-flex uppercase text-sm tracking-wide">
-              Lộ Trình Chính
+              Lộ Trình Tuyến
             </div>
             
-            <div className="flex items-center justify-center gap-4 w-full mb-8">
-              <div className="flex flex-col items-center">
-                <MapPin className="w-8 h-8 text-ink mb-2" />
-                <span className="font-bold text-sm uppercase">Đà Nẵng</span>
-              </div>
-              <div className="flex-1 flex flex-col items-center px-2">
-                <div className="w-full border-t border-dashed border-ink-muted/50 relative flex justify-center">
-                  <div className="absolute -top-3.5 bg-accent text-white rounded-full p-1 border-4 border-white">
-                    <ArrowRight className="w-4 h-4" />
-                  </div>
+            <div className="w-full relative pl-8 pr-4 pb-4">
+              {/* Vertical Dashed Line */}
+              <div className="absolute left-[39px] top-2 bottom-[30px] w-0.5 border-l-2 border-dashed border-rule"></div>
+
+              {/* Point 1 */}
+              <div className="relative mb-7">
+                <div className="absolute -left-[14px] top-1.5 w-4 h-4 rounded-full bg-white border-4 border-accent shadow-sm z-10"></div>
+                <div className="pl-6">
+                  <h4 className="text-[17px] font-black text-ink uppercase tracking-tight">Đà Nẵng</h4>
+                  <p className="text-[13px] text-ink-muted leading-relaxed mt-1 font-medium">Sân bay, Bến xe, Nội thành, Liên Chiểu</p>
                 </div>
-                <span className="text-xs font-semibold text-ink mt-4 uppercase">Và Ngược Lại</span>
               </div>
-              <div className="flex flex-col items-center">
-                <MapPin className="w-8 h-8 text-ink mb-2" />
-                <span className="font-bold text-sm uppercase">Quảng Trị</span>
+
+              {/* Point 2 */}
+              <div className="relative mb-7">
+                <div className="absolute -left-[14px] top-1.5 w-4 h-4 rounded-full bg-white border-4 border-[#0284C7] shadow-sm z-10"></div>
+                <div className="pl-6">
+                  <h4 className="text-[17px] font-black text-ink uppercase tracking-tight">Huế</h4>
+                  <p className="text-[13px] text-ink-muted leading-relaxed mt-1 font-medium">Phú Lộc, Phú Bài, Trung tâm TP Huế</p>
+                </div>
+              </div>
+
+              {/* Point 3 */}
+              <div className="relative">
+                <div className="absolute -left-[14px] top-1.5 w-4 h-4 rounded-full bg-white border-4 border-[#EF4444] shadow-sm z-10"></div>
+                <div className="pl-6">
+                  <h4 className="text-[17px] font-black text-ink uppercase tracking-tight">Quảng Trị</h4>
+                  <p className="text-[13px] text-ink-muted leading-relaxed mt-1 font-medium">Hải Lăng, TX Quảng Trị, TP Đông Hà</p>
+                </div>
               </div>
             </div>
 
-            <div className="w-full bg-[#F4F9F5] rounded-xl p-5 flex items-start gap-4">
-              <Car className="w-8 h-8 text-accent shrink-0 mt-1" />
+            <div className="text-[11px] font-bold text-ink-muted mt-2 mb-6 uppercase text-center w-full tracking-wider bg-paper-2 py-2 rounded-lg inline-flex justify-center items-center gap-2 border border-rule/50">
+              <ArrowRight className="w-3 h-3" /> Chiều ngược lại tương tự
+            </div>
+
+            <div className="w-full bg-[#E8F3EB] border border-accent/20 rounded-xl p-4 flex items-start gap-4">
+              <Car className="w-8 h-8 text-accent shrink-0 mt-0.5" />
               <div>
-                <h4 className="font-bold text-ink uppercase mb-2">Đưa Đón Tận Nơi</h4>
-                <ul className="space-y-1 text-sm text-ink-muted list-disc ml-4 marker:text-accent">
-                  <li>Trong nội thành Đà Nẵng, Quảng Trị</li>
-                  <li>Các huyện, thị xã lân cận</li>
-                  <li>Theo yêu cầu của khách hàng</li>
-                </ul>
+                <h4 className="font-bold text-ink uppercase mb-1.5 text-[15px]">Đưa Đón Tận Nơi</h4>
+                <p className="text-[13px] text-ink-muted leading-relaxed font-medium">Tài xế đón/trả tận nhà tại các điểm trong nội thành và lân cận.</p>
               </div>
             </div>
           </div>

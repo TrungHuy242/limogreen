@@ -31,12 +31,12 @@ export const HeroSection = () => {
               Chạy Chuyến
             </div>
             
-            <h1 className="font-black text-ink leading-[1.1] mb-6 text-4xl sm:text-5xl lg:text-6xl flex flex-col gap-2">
+            <h1 className="font-black text-ink leading-[1.1] mb-6 text-3xl sm:text-4xl lg:text-5xl flex flex-col gap-1 sm:gap-2">
               <span>ĐÀ NẴNG</span>
-              <div className="flex items-center justify-center md:justify-start gap-4 text-accent">
-                <span className="w-12 h-1 bg-accent rounded-full" />
-                <svg className="w-8 h-8 fill-current" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm3.71 11.71-3 3a1 1 0 0 1-1.42 0l-3-3a1 1 0 0 1 1.42-1.42L11 13.59V8a1 1 0 0 1 2 0v5.59l1.29-1.29a1 1 0 0 1 1.42 1.42z"/></svg>
-                <span className="w-12 h-1 bg-accent rounded-full" />
+              <div className="flex items-center justify-center md:justify-start gap-2 sm:gap-4 text-accent text-2xl sm:text-3xl lg:text-4xl">
+                <span className="w-8 h-1 bg-accent rounded-full" />
+                <span>HUẾ</span>
+                <span className="w-8 h-1 bg-accent rounded-full" />
               </div>
               <span>QUẢNG TRỊ</span>
             </h1>
