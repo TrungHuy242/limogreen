@@ -1,26 +1,40 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Hệ màu Light Mode chiết xuất từ Poster */
+  --color-paper: oklch(99% 0 0); /* Trắng tinh khiết */
+  --color-paper-2: oklch(97% 0.01 140); /* Xám ngà xanh */
+  --color-ink: oklch(25% 0.02 140); /* Xám đen đậm (gần đen) */
+  --color-ink-muted: oklch(50% 0.02 140); /* Xám vừa */
+  
+  --color-accent: oklch(35% 0.1 140); /* Xanh lục đậm chuẩn từ poster */
+  --color-accent-light: oklch(75% 0.2 142); /* Xanh lá tươi */
+  --color-accent-glow: oklch(45% 0.15 140 / 0.1); 
+  
+  --color-rule: oklch(92% 0.01 140); /* Xám viền mỏng */
+  
+  --font-display: "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Glass hiệu ứng nhẹ cho nền sáng */
+@utility glass-pill {
+  background: color-mix(in oklch, var(--color-paper) 85%, transparent);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border: 1px solid var(--color-rule);
 }
