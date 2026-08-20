@@ -41,7 +41,7 @@ export const FloatingButtons = () => {
       </a>
 
       <a
-        href="https://zalo.me/0774737474"
+        href="https://zalo.me/84774737474"
         target="_blank"
         rel="noopener noreferrer"
         onClick={() => trackEvent("Zalo_Floating")}
