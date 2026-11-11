@@ -46,11 +46,11 @@ export const Header = () => {
       </ul>
 
       <a
-        href="tel:0774737474"
+        href="tel:0933737474"
         onClick={() => trackEvent("Call_Header")}
         className="flex-shrink-0 text-[14px] font-bold bg-accent text-white px-5 py-2.5 rounded-full hover:bg-black transition-colors active:scale-95 shadow-md shadow-accent/20"
       >
-        <span className="hidden sm:inline">Gọi Ngay:</span> 0774 737 474
+        <span className="hidden sm:inline">Gọi Ngay:</span> 0933 737 474
       </a>
     </nav>
   );

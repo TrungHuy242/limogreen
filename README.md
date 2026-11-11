@@ -1,6 +1,6 @@
 # LimoGreen
 
-Landing page cho dịch vụ xe điện VinFast VF8 tuyến **Đà Nẵng – Huế – Quảng Trị** (và ngược lại). Hotline / Zalo: **0774 737 474**.
+Landing page cho dịch vụ xe điện VinFast VF8 tuyến **Đà Nẵng – Huế – Quảng Trị** (và ngược lại). Hotline / Zalo: **0933 737 474**.
 
 Bản đang chạy: https://limogreen.vercel.app
 
@@ -44,4 +44,4 @@ public/images/            # logo, ảnh xe, QR Zalo
 | --- | --- |
 | Bật Facebook Pixel | Thêm biến môi trường `NEXT_PUBLIC_FB_PIXEL_ID` trên Vercel (Settings → Environment Variables), rồi redeploy. Chưa có biến này thì Pixel không được tải. |
 | Đổi sang tên miền riêng | Sửa `SITE_URL` trong `src/lib/seo.ts`. |
-| Đổi số điện thoại / Zalo | Tìm `0774737474` trong `src/components/sections` và `src/lib/seo.ts`. |
+| Đổi số điện thoại / Zalo | Tìm `0933737474` trong `src/components/sections` và `src/lib/seo.ts`. |

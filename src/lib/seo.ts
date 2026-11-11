@@ -9,7 +9,7 @@ export const localBusinessSchema = {
   url: SITE_URL,
   image: `${SITE_URL}/opengraph-image.png`,
   logo: `${SITE_URL}/images/LogoNoBakground.png`,
-  telephone: "+84774737474",
+  telephone: "+84933737474",
   description:
     "Dịch vụ xe điện cao cấp VinFast VF8 tuyến Đà Nẵng – Huế – Quảng Trị và ngược lại. Đưa đón tận nơi, hỗ trợ 24/7.",
   address: {
@@ -31,7 +31,7 @@ export const localBusinessSchema = {
     opens: "00:00",
     closes: "23:59",
   },
-  sameAs: ["https://zalo.me/84774737474"],
+  sameAs: ["https://zalo.me/84933737474"],
   areaServed: [
     { "@type": "City", name: "Đà Nẵng" },
     { "@type": "City", name: "Huế" },

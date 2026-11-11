@@ -8,9 +8,9 @@ const inter = Inter({ subsets: ["vietnamese"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "LimoGreen – Xe Điện Cao Cấp Đà Nẵng – Huế – Quảng Trị | 0774 737 474",
+  title: "LimoGreen – Xe Điện Cao Cấp Đà Nẵng – Huế – Quảng Trị | 0933 737 474",
   description:
-    "LimoGreen – Dịch vụ xe điện cao cấp VinFast VF8 tuyến Đà Nẵng – Huế – Quảng Trị và ngược lại. Đưa đón tận nơi, 0 khí thải, hỗ trợ 24/7. Đặt xe: 0774 737 474.",
+    "LimoGreen – Dịch vụ xe điện cao cấp VinFast VF8 tuyến Đà Nẵng – Huế – Quảng Trị và ngược lại. Đưa đón tận nơi, 0 khí thải, hỗ trợ 24/7. Đặt xe: 0933 737 474.",
   keywords: [
     "xe điện Đà Nẵng Quảng Trị",
     "xe Đà Nẵng Huế",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "LimoGreen – Xe Điện Cao Cấp Đà Nẵng – Huế – Quảng Trị",
     description:
-      "Hành trình xanh, trải nghiệm sang trọng. VinFast VF8 – Đưa đón tận nơi. Gọi: 0774 737 474",
+      "Hành trình xanh, trải nghiệm sang trọng. VinFast VF8 – Đưa đón tận nơi. Gọi: 0933 737 474",
     url: "/",
     siteName: "LimoGreen",
     type: "website",

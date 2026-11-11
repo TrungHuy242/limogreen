@@ -32,7 +32,7 @@ export const FloatingButtons = () => {
       }`}
     >
       <a
-        href="tel:0774737474"
+        href="tel:0933737474"
         onClick={() => trackEvent("Call_Floating")}
         className="flex items-center justify-center gap-2.5 bg-white text-ink border border-rule hover:bg-paper-2 w-14 h-14 rounded-full shadow-lg sm:w-auto sm:h-auto sm:px-5 sm:py-3.5 sm:rounded-full transition-all duration-200 active:scale-95"
       >
@@ -41,7 +41,7 @@ export const FloatingButtons = () => {
       </a>
 
       <a
-        href="https://zalo.me/84774737474"
+        href="https://zalo.me/84933737474"
         target="_blank"
         rel="noopener noreferrer"
         onClick={() => trackEvent("Zalo_Floating")}

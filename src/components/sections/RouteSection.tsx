@@ -93,14 +93,14 @@ export const RouteSection = () => {
             </div>
             
             <a 
-              href="tel:0774737474"
+              href="tel:0933737474"
               onClick={() => trackEvent("Call_Card")}
               className="flex items-center gap-3 text-accent hover:opacity-80 transition-opacity mb-2"
             >
               <div className="bg-accent rounded-full p-2">
                 <Phone className="w-7 h-7 text-white fill-white" />
               </div>
-              <span className="font-black text-3xl tracking-tight">0774 737 474</span>
+              <span className="font-black text-3xl tracking-tight">0933 737 474</span>
             </a>
             <p className="text-sm text-ink-muted font-medium mb-8">(Zalo / Điện thoại)</p>
 
