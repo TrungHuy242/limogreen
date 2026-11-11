@@ -38,7 +38,7 @@ export const Header = () => {
 
       <ul className="hidden sm:flex items-center justify-center flex-1 gap-8 text-[14px] font-semibold tracking-wide">
         <li>
-          <a href="#features" className="text-ink-muted hover:text-accent transition-colors">Vì sao chọn LimoGreen?</a>
+          <a href="#why" className="text-ink-muted hover:text-accent transition-colors">Vì sao chọn LimoGreen?</a>
         </li>
         <li>
           <a href="#route" className="text-ink-muted hover:text-accent transition-colors">Lộ trình</a>
