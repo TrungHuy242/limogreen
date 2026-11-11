@@ -1,19 +1,19 @@
 "use client";
 
 import React from "react";
-import { CheckCircle2, MapPin, ArrowRight, Car, QrCode, Phone } from "lucide-react";
+import { CheckCircle2, ArrowRight, Car, Phone } from "lucide-react";
 import { trackEvent } from "@/components/scripts/FacebookPixel";
 import Image from "next/image";
 
 export const RouteSection = () => {
   return (
-    <section id="route" className="py-20 bg-paper px-4">
+    <section id="route" className="py-20 bg-paper px-4 scroll-mt-20">
       <div className="max-w-7xl mx-auto bg-white rounded-3xl shadow-sm border border-rule overflow-hidden">
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-8 md:p-10 divide-y md:divide-y-0 md:divide-x divide-rule">
           
           {/* Cột 1: Vì sao chọn LimoGreen */}
-          <div className="flex flex-col">
+          <div id="why" className="flex flex-col scroll-mt-32">
             <div className="bg-accent text-white font-bold px-6 py-2 rounded-full mb-8 inline-flex self-start uppercase text-sm tracking-wide">
               Vì Sao Chọn LimoGreen?
             </div>

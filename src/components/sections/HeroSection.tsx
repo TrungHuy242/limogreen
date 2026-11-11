@@ -6,18 +6,18 @@ import { MapPin } from "lucide-react";
 
 export const HeroSection = () => {
   return (
-    <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden bg-paper">
+    <section className="relative isolate pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden bg-paper">
       
       {/* Nền xanh cong như trong Poster (Dải cong bên phải/dưới ảnh xe) */}
       <div 
-        className="absolute bottom-0 right-0 w-full md:w-[65%] h-[70%] md:h-full bg-accent rounded-tl-[100px] sm:rounded-tl-[200px] lg:rounded-tl-[300px] -z-10"
+        className="absolute bottom-0 right-0 w-full md:w-[65%] h-[42%] md:h-full bg-accent rounded-tl-[100px] sm:rounded-tl-[200px] lg:rounded-tl-[300px] -z-10"
         style={{
           boxShadow: "-20px -20px 60px rgba(22, 101, 52, 0.1)"
         }}
       />
       {/* Phố cảnh / background Cầu Rồng mờ đằng sau mảng màu xanh */}
       <div 
-        className="absolute bottom-0 right-0 w-full md:w-[65%] h-[70%] md:h-full rounded-tl-[100px] sm:rounded-tl-[200px] lg:rounded-tl-[300px] -z-10 opacity-20 bg-cover bg-center"
+        className="absolute bottom-0 right-0 w-full md:w-[65%] h-[42%] md:h-full rounded-tl-[100px] sm:rounded-tl-[200px] lg:rounded-tl-[300px] -z-10 opacity-20 bg-cover bg-center"
         style={{ backgroundImage: "url('https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&q=80')" }}
       />
 
@@ -58,7 +58,7 @@ export const HeroSection = () => {
 
           {/* Cột phải: Ảnh Xe */}
           <div className="relative flex items-center justify-center mt-10 md:mt-0">
-            <div className="relative w-full max-w-[800px] animate-float-car">
+            <div className="relative w-full max-w-[800px] motion-safe:animate-float-car">
               <Image
                 src="/images/Xe.png"
                 alt="Xe điện VinFast VF8 màu trắng của LimoGreen"

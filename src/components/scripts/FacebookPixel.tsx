@@ -2,7 +2,21 @@
 
 import Script from "next/script";
 
+// Đặt NEXT_PUBLIC_FB_PIXEL_ID trên Vercel (Settings → Environment Variables) rồi redeploy.
+// Chưa có ID thì Pixel không được tải.
+const PIXEL_ID = process.env.NEXT_PUBLIC_FB_PIXEL_ID;
+
+type Fbq = (command: "init" | "track" | "trackCustom", ...args: unknown[]) => void;
+
+declare global {
+  interface Window {
+    fbq?: Fbq;
+  }
+}
+
 export default function FacebookPixel() {
+  if (!PIXEL_ID) return null;
+
   return (
     <>
       <Script
@@ -18,27 +32,29 @@ export default function FacebookPixel() {
             t.src=v;s=b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', 'YOUR_PIXEL_ID');
+            fbq('init', '${PIXEL_ID}');
             fbq('track', 'PageView');
           `,
         }}
       />
       <noscript>
+        {/* eslint-disable-next-line @next/next/no-img-element -- pixel 1x1 cho trình duyệt tắt JS */}
         <img
           height="1"
           width="1"
           style={{ display: "none" }}
-          src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"
-          alt="facebook pixel"
+          src={`https://www.facebook.com/tr?id=${PIXEL_ID}&ev=PageView&noscript=1`}
+          alt=""
         />
       </noscript>
     </>
   );
 }
 
-// Utility to fire custom events
+// Gửi custom event (Call_Header, Zalo_Floating, ...) tới Pixel.
+// Tên event không thuộc bộ chuẩn của Facebook nên phải dùng trackCustom.
 export const trackEvent = (eventName: string, params?: Record<string, unknown>) => {
-  if (typeof window !== "undefined" && (window as any).fbq) {
-    (window as any).fbq("track", eventName, params);
+  if (typeof window !== "undefined" && window.fbq) {
+    window.fbq("trackCustom", eventName, params);
   }
 };
